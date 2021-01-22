@@ -1,0 +1,149 @@
+from selenium import webdriver 
+from selenium.webdriver.common.keys import Keys
+import time
+
+driver = webdriver.Chrome(executable_path=r'chromedriver.exe')
+driver.get('https://www.instagram.com/')
+
+time.sleep(4)
+
+driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[1]/div/label/input').send_keys('ryan_nike_ryan')
+driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[2]/div/label/input').send_keys('allox2020')
+
+time.sleep(2)
+
+entrar = driver.find_element_by_xpath('//*[@id="loginForm"]/div/div[3]/button/div')
+entrar.click()
+
+time.sleep(2)
+
+driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/input').send_keys('nike' + Keys.RETURN)
+time.sleep(1)
+
+pag = driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[2]/div[4]/div/a[1]/div')
+pag.click()
+
+time.sleep(3)
+
+seguidores = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/ul/li[2]/a')
+seguidores.click()
+
+time.sleep(1)
+
+seguir = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li[1]/div/div[3]/button')
+seguir.click()
+
+time.sleep(1)
+
+seguir2 = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li[2]/div/div[3]/button')
+seguir2.click()
+
+time.sleep(1)
+
+seguir3 = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li[3]/div/div[3]/button')
+seguir3.click()
+
+time.sleep(1)
+
+seguir4 = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li[4]/div/div[3]/button')
+seguir4.click()
+
+time.sleep(1)
+
+seguir5 = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li[5]/div/div[3]/button')
+seguir5.click()
+
+time.sleep(1)
+
+seguir6 = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li[6]/div/div[3]/button')
+seguir6.click()
+
+seguir7 = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li[7]/div/div[3]/button')
+seguir7.click()
+
+time.sleep(1)
+
+sair1 = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[1]/div/div[2]/button')
+sair1.click()
+
+time.sleep(10)
+
+perfil = driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[3]/div/div[5]/span/img')
+perfil.click()
+
+time.sleep(3)
+
+abrir = driver.find_element_by_xpath('//*[@id="react-root"]/section/nav/div[2]/div/div/div[3]/div/div[5]/div[2]/div[2]/div[2]/a[1]/div')
+abrir.click()
+
+time.sleep(2)
+
+seguindo = driver.find_element_by_xpath('//*[@id="react-root"]/section/main/div/header/section/ul/li[3]/a')
+seguindo.click()
+
+time.sleep(1)
+
+unfollow = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li[1]/div/div[3]/button')
+unfollow.click()
+
+time.sleep(1)
+
+certo = driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div[3]/button[1]')
+certo.click()
+
+time.sleep(1)
+
+unfollow = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li[2]/div/div[3]/button')
+unfollow.click()
+
+time.sleep(1)
+
+certo = driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div[3]/button[1]')
+certo.click()
+
+time.sleep(1)
+
+unfollow = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li[3]/div/div[3]/button')
+unfollow.click()
+
+time.sleep(1)
+
+certo = driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div[3]/button[1]')
+certo.click()
+
+time.sleep(1)
+
+unfollow = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li[4]/div/div[3]/button')
+unfollow.click()
+
+time.sleep(1)
+
+certo = driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div[3]/button[1]')
+certo.click()
+
+time.sleep(1)
+
+unfollow = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li[5]/div/div[3]/button')
+unfollow.click()
+
+time.sleep(1)
+
+certo = driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div[3]/button[1]')
+certo.click()
+
+time.sleep(1)
+
+unfollow = driver.find_element_by_xpath('/html/body/div[5]/div/div/div[2]/ul/div/li[6]/div/div[3]/button')
+unfollow.click()
+
+time.sleep(1)
+
+certo = driver.find_element_by_xpath('/html/body/div[6]/div/div/div/div[3]/button[1]')
+certo.click()
+
+
+input('ok')
+
+
+
+
